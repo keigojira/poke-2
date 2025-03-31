@@ -1,0 +1,102 @@
+/* ゲーム全体のスタイル */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+  color: #333;
+}
+
+.game-container {
+  background: url('https://example.com/battle-background.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* 各画面のスタイル */
+.screen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pokemon-selection button {
+  padding: 15px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pokemon-selection button:hover {
+  background-color: #45a049;
+}
+
+.pokemon-selection button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.battle-field {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pokemon-box {
+  width: 40%;
+  text-align: center;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-img {
+  width: 150px;
+  height: 150px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.attack-options {
+  margin-top: 10px;
+}
+
+#message {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #ff6347;
+}
