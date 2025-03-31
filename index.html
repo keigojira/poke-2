@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ポケモンバトルゲーム</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>ポケモンバトル</h1>
+
+    <div id="select-screen" class="screen">
+      <h2>どのポケモンで戦いますか？</h2>
+      <div class="pokemon-selection">
+        <button onclick="choosePokemon('ピカチュウ')">ピカチュウ</button>
+        <button onclick="choosePokemon('リザードン')">リザードン</button>
+        <button onclick="choosePokemon('フシギダネ')">フシギダネ</button>
+        <button onclick="choosePokemon('ゼニガメ')">ゼニガメ</button>
+        <button onclick="choosePokemon('イーブイ')">イーブイ</button>
+        <button onclick="choosePokemon('フーディン')">フーディン</button>
+        <button onclick="choosePokemon('カビゴン')">カビゴン</button>
+        <button onclick="choosePokemon('ミュウツー')">ミュウツー</button>
+        <button onclick="choosePokemon('ゲンガー')">ゲンガー</button>
+        <button onclick="choosePokemon('リオル')">リオル</button>
+      </div>
+    </div>
+
+    <div id="battle-screen" class="screen" style="display: none;">
+      <div class="battle-field">
+        <div id="player-pokemon" class="pokemon-box">
+          <h2>あなたのポケモン</h2>
+          <img id="player-img" src="" alt="player pokemon" class="pokemon-img">
+          <p id="player-name">ピカチュウ</p>
+          <p id="player-hp">HP: 100</p>
+          <p id="player-energy">エネルギー: 0</p>
+          <button id="attack-btn" onclick="chooseAttack()">攻撃する</button>
+          <div id="attack-options" class="attack-options" style="display: none;">
+            <button onclick="attack('normal')">通常攻撃</button>
+            <button onclick="attack('special')">特殊攻撃</button>
+          </div>
+        </div>
+        
+        <div id="enemy-pokemon" class="pokemon-box">
+          <h2>敵のポケモン</h2>
+          <img id="enemy-img" src="" alt="enemy pokemon" class="pokemon-img">
+          <p id="enemy-name">リザードン</p>
+          <p id="enemy-hp">HP: 100</p>
+          <p id="enemy-energy">エネルギー: 0</p>
+        </div>
+      </div>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
